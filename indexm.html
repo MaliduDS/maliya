@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Malidu Theekshana | Pro Gamer & Content Creator</title>
+
+    <meta name="description" content="Malidu Theekshana - Official gaming portal, live streams, esports guides, and community tournaments. Join the ultimate gaming hub.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://malidutheekshana.com/">
+    <meta property="og:title" content="Malidu Theekshana | Pro Gamer & Content Creator">
+    <meta property="og:description" content="Join Malidu Theekshana's gaming arena. Watch live streams, access esports strategy guides, and join exclusive tournaments.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://malidutheekshana.com/">
+    <meta property="twitter:title" content="Malidu Theekshana | Pro Gamer & Content Creator">
+    <meta property="twitter:description" content="Join Malidu Theekshana's gaming arena. Watch live streams, access esports strategy guides, and join exclusive tournaments.">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="source_files/faviconx.png">
+
+    <style type="text/css">
+        body {
+            background-color: #0b0e14;
+            color: #e2e8f0;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.1rem;
+        }
+
+        h1, h2, h3, h4, h5, .navbar-brand, .login-btn {
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Neon & Gaming Accents */
+        .text-neon {
+            color: #00f0ff !important;
+            text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+        }
+
+        .bg-neon {
+            background-color: #00f0ff !important;
+        }
+
+        /* Navbar Customization */
+        .site-header {
+            background: rgba(11, 14, 20, 0.95);
+            border-bottom: 1px solid #1e293b;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-link {
+            color: #cbd5e1 !important;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #00f0ff !important;
+        }
+
+        .login-btn {
+            background: linear-gradient(135deg, #7928ca, #ff0080) !important;
+            border: none !important;
+            border-radius: 6px !important;
+            padding: 8px 20px;
+            font-weight: 700;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .login-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 15px rgba(255, 0, 128, 0.6);
+        }
+
+        /* Hero Banner */
+        .hero-section {
+            position: relative;
+            background: radial-gradient(circle at center, #1a1f2c 0%, #0b0e14 100%);
+            padding: 100px 0 60px 0;
+            overflow: hidden;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        /* Cards Layout */
+        .course-cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .course-card {
+            background: #141a23;
+            border: 1px solid #1e293b;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            flex: 1 1 calc(33.333% - 20px);
+            max-width: 380px;
+            min-width: 280px;
+        }
+
+        .course-card:hover {
+            transform: translateY(-8px);
+            border-color: #00f0ff;
+            box-shadow: 0 8px 25px rgba(0, 240, 255, 0.25);
+            color: inherit;
+        }
+
+        .course-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .course-body {
+            padding: 20px;
+        }
+
+        .course-title {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .course-price {
+            background: linear-gradient(90deg, #00f0ff, #7000ff);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Video / Feature Section */
+        .feature-box {
+            background: #141a23;
+            border: 1px solid #1e293b;
+            border-radius: 16px;
+            padding: 40px;
+            margin-top: 60px;
+        }
+
+        /* Floating WhatsApp / Discord Button */
+        .discord-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #5865F2;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 0 15px rgba(88, 101, 242, 0.5);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .discord-float:hover {
+            background-color: #4752C4;
+            color: #FFF;
+            transform: scale(1.1);
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            .discord-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <!-- Discord Floating Button -->
+    <a href="https://discord.gg/example" class="discord-float" target="_blank" title="Join Discord">
+        <i class="fab fa-discord"></i>
+    </a>
+
+    <!-- Header Navigation -->
+    <header class="site-header" id="header">
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container">
+                <a class="navbar-brand text-neon fw-bold fs-3" href="index.html">
+                    MALIDU <span class="text-white">GAMING</span>
+                </a>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#games">Games & Streams</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bootcamp">Game Plan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Malidu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="login.html" class="btn login-btn text-white">Join Squad</a>
+                </div>
+            </div>
+        </nav>
+    </header>    
+
+    <!-- Main Hero Section -->
+    <section id="hero" class="hero-section text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h1 class="hero-title">WELCOME TO <span class="text-neon">MALIDU THEEKSHANA'S</span> ARENA</h1>
+                    <p class="lead text-secondary mb-4 fs-4">
+                        Professional Esports Player, Content Creator & Gaming Strategist. Elevate your gameplay to champion levels.
+                    </p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#games" class="btn btn-info btn-lg fw-bold px-4 py-2">Watch Live</a>
+                        <a href="#bootcamp" class="btn btn-outline-light btn-lg fw-bold px-4 py-2">Esports Guides</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games & Live Content -->
+    <section id="games" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-white display-6 fw-bold">Featured <span class="text-neon">Streams & Hubs</span></h2>
+                <p class="text-secondary">Join live matches, watch VODs, and learn pro strategies</p>
+            </div>
+            
+            <div class="course-cards-container">
+                <!-- Game Card 1 -->
+                <a href="#stream" class="course-card">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800" alt="Valorant Pro Guides" class="course-image">
+                    <div class="course-body">
+                        <h3 class="course-title text-center">Valorant Pro Tactics</h3>
+                        <div class="course-price">Watch Live Stream</div> 
+                    </div>
+                </a>
+
+                <!-- Game Card 2 -->
+                <a href="#stream" class="course-card">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=800" alt="PUBG Esports" class="course-image">
+                    <div class="course-body">
+                        <h3 class="course-title text-center">PUBG Mobile Championship</h3>
+                        <div class="course-price">Join Tournament</div> 
+                    </div>
+                </a>
+
+                <!-- Game Card 3 -->
+                <a href="#stream" class="course-card">
+                    <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=800" alt="Apex Legends" class="course-image">
+                    <div class="course-body">
+                        <h3 class="course-title text-center">Apex Ranked Grind</h3>
+                        <div class="course-price">View VOD Reviews</div> 
+                    </div>
+                </a>
+
+                <!-- Game Card 4 -->
+                <a href="#stream" class="course-card">
+                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800" alt="Setup & Tech" class="course-image">
+                    <div class="course-body">
+                        <h3 class="course-title text-center">Pro Gaming Setup & Gear</h3>
+                        <div class="course-price">Check Specs</div> 
+                    </div>
+                </a>
+
+                <!-- Game Card 5 -->
+                <a href="#stream" class="course-card">
+                    <img src="https://images.unsplash.com/photo-1560253023-3ec5d502959f?q=80&w=800" alt="Community Cup" class="course-image">
+                    <div class="course-body">
+                        <h3 class="course-title text-center">Weekly Community Cup</h3>
+                        <div class="course-price">Register Squad</div> 
+                    </div>
+                </a>
+
+                <!-- Game Card 6 -->
+                <a href="#stream" class="course-card">
+                    <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=800" alt="Bootcamp" class="course-image">
+                    <div class="course-body">
+                        <h3 class="course-title text-center">Game Plan - Esports Bootcamp</h3>
+                        <div class="course-price">Enroll Now</div> 
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Plan Section -->
+    <section id="bootcamp" class="py-5 bg-dark">
+        <div class="container">
+            <div class="feature-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=800" alt="Game Plan Bootcamp" class="img-fluid rounded-3 shadow border border-secondary">
+                    </div>
+                    <div class="col-lg-6 ps-lg-4">
+                        <h2 class="text-neon fw-bold mb-3">THE ESPORTS GAME PLAN</h2>
+                        <p class="text-light">
+                            Gaming competitively is all about strategy and discipline. To help aspiring gamers rise to top ranks, <strong>Malidu Theekshana</strong> introduced the structured 6-Level Gaming Master Plan.
+                        </p>
+                        <p class="text-secondary">
+                            Covering 6 core phases: Preliminary Mechanics, Movement Foundation, Intermediate Strategy, Team Synergies, Tournament Psychology, and Grand Final Masterclass.
+                        </p>
+                        <ul class="list-unstyled text-light my-3">
+                            <li><i class="fas fa-check-circle text-neon me-2"></i> Aim & Mechanics Mastery</li>
+                            <li><i class="fas fa-check-circle text-neon me-2"></i> Map Awareness & Rotation Strategy</li>
+                            <li><i class="fas fa-check-circle text-neon me-2"></i> Custom Match VOD Analysis</li>
+                        </ul>
+                        <h4 class="text-white mt-4">Train with National & Regional Champions. <span class="text-neon">GAME PLAN.</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bio / About Creator Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?q=80&w=800" alt="Malidu Theekshana" class="img-fluid rounded-3 border border-secondary">
+                </div>
+                <div class="col-lg-6 order-lg-1 pe-lg-4">
+                    <h2 class="text-white fw-bold mb-2">Excellence In Esports Begins Here</h2>
+                    <h3 class="text-neon fs-4 mb-4">Malidu Theekshana | Pro Streamer & Coach</h3>
+                    <p class="text-secondary">
+                        Bringing passion, tactical prowess, and structured gameplay analysis, Malidu transforms casual playing into elite competitive performance.
+                    </p>
+                    <p class="text-secondary">
+                        With multiple tournament victories and years of streaming experience, Malidu inspires a growing community of gamers across the country to dominate the leaderboards.
+                    </p>
+                    <div class="mt-4">
+                        <a href="#contact" class="btn btn-outline-info me-2"><i class="fab fa-youtube me-2"></i>Watch Channel</a>
+                        <a href="#contact" class="btn btn-outline-light"><i class="fab fa-twitch me-2"></i>Twitch Stream</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="py-5 bg-dark border-top border-secondary">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-white fw-bold">Get In <span class="text-neon">Touch</span></h2>
+                <p class="text-secondary">Reach out for sponsorships, squad invites, or coaching sessions.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-5 mb-4">
+                    <div class="p-4 bg-black rounded-3 border border-secondary h-100">
+                        <h4 class="text-white mb-4">Contact Info</h4>
+                        <p class="text-secondary mb-3"><i class="fas fa-user text-neon me-3"></i> Malidu Theekshana</p>
+                        <p class="text-secondary mb-3"><i class="fas fa-map-marker-alt text-neon me-3"></i> Colombo, Sri Lanka</p>
+                        <p class="text-secondary mb-3"><i class="fas fa-phone text-neon me-3"></i> +94 70 2 77 88 77</p>
+                        <p class="text-secondary"><i class="fas fa-envelope text-neon me-3"></i> contact@malidutheekshana.com</p>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <form class="p-4 bg-black rounded-3 border border-secondary">
+                        <div class="mb-3">
+                            <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control bg-dark text-white border-secondary" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control bg-dark text-white border-secondary" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn login-btn text-white w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Site Footer -->
+    <footer class="py-4 bg-black border-top border-secondary text-center">
+        <div class="container">
+            <div class="mb-3">
+                <a href="#" class="text-white me-3 fs-5"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3 fs-5"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="text-white me-3 fs-5"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white me-3 fs-5"><i class="fab fa-twitch"></i></a>
+                <a href="#" class="text-white fs-5"><i class="fab fa-discord"></i></a>
+            </div>
+            <p class="text-secondary small mb-0">
+                © 2026 Malidu Theekshana. All Rights Reserved. Designed for Esports & Gaming Excellence.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
